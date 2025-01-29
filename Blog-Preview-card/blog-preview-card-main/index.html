@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color: #f5d04e;
+      font-size: 16px;
+      font-family: 'Figtree', sans-serif;
+    }
+    .card{
+      position: absolute;
+      top: 15%;
+      left: 40%;
+      border: 2px #000;
+      box-shadow: 10px 10px 1px #000;
+    }
+    .learn{
+      background-color: #f9cf48;
+    }
+    .info{
+      color:#6b6b6b;
+    }
+    .info1{
+      font-weight: 800;
+      font-size: 20px;
+    }
+    .attribution{ 
+      font-size: 11px; 
+      text-align: center; 
+    }
+    .attribution a{ 
+      color: hsl(228, 45%, 44%); 
+    }
+  </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body class="w-[1440px] overflow-hidden min-w-[375px] min-h-[800px] max-w-[1440px] max-h-[100vh]">
+  <!--Card-->
+  <div class="card h-[485px] w-[330px] bg-white rounded-2xl">
+  <div class="ml-2 mr-2 flex flex-col gap-2">
+    <!--IMG-->
+    <div>
+      <img src="assets/images/illustration-article.svg" alt="illustration-article" 
+      class="img mt-1 p-2 h-[200px] w-full">
+    </div>
+    <div class="p-2">
+      <p class="learn text-center w-[80px] rounded-sm"><b>Learning</b></p>
+      <p>Published 21 Dec 2023</p>
+    </div>
+
+    <!--Text-->
+    <div class="info1 flex flex-col items-start pl-2 gap-1">
+      <p><b>HTML & CSS foundations</b>
+      </p>
+      <p class="text-[12px] info">These languages are the backbone of every <br>
+         website, defining structure, content, and <br>
+         presentation.
+      </p>
+    </div>
+    <!--User-->
+    <div class="w-[150px] flex items-end gap-3">
+      <img src="assets/images/image-avatar.webp" alt="image-avatar" class="w-[30px]">
+      <p class="text-[13px]"><b>Greg Hooper</b></p>
+    </div>
+    <!--Footer-->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" 
+      target="_blank">Frontend Mentor</a>. <br> 
+      Coded by <a href="https://x.com/West_6795">Eugene Westley</a>.
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
